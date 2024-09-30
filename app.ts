@@ -1,5 +1,7 @@
 // Variable Declarations
 
+import { Employee } from "./classes";
+
 let x: number = 0;
 let forename: string = "Matt";
 let surname: string = "Sullivan"
@@ -23,3 +25,7 @@ do {
 ages.forEach(age => {
     console.log(age);
 });
+
+let Matt: Employee = new Employee(20, "Matt", "Sullivan", new Date(), 1234, new Date())
+
+console.log(Matt);
