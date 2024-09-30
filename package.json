@@ -1,0 +1,16 @@
+{
+  "name": "learntypescript",
+  "version": "1.0.0",
+  "description": "Repo to learn Typescript",
+  "main": "./dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "tsc && node ./dist/app.js"
+  },
+  "author": "Matt Sullivan",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
