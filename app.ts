@@ -26,6 +26,7 @@ ages.forEach(age => {
     console.log(age);
 });
 
-let Matt: Employee = new Employee(20, "Matt", "Sullivan", new Date(), 1234, new Date())
+let Matt: Employee = new Employee(20, "Matt", "Sullivan", new Date(), 1234, new Date('2022-07-30'))
 
 console.log(Matt);
+console.log(Matt.YearsOfService)
