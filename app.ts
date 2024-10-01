@@ -1,7 +1,7 @@
 // Variable Declarations
 
 import { Employee } from "./classes";
-import { capitalise } from "./functions";
+import { capitalise, lowercase } from "./functions";
 
 let x: number = 0;
 let forename: string = "matt";
@@ -32,3 +32,4 @@ let Matt: Employee = new Employee(20, "Matt", "Sullivan", new Date(), 1234, new 
 console.log(Matt);
 console.log(Matt.YearsOfService);
 console.log(capitalise(forename));
+console.log(lowercase(surname));
