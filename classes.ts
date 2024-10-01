@@ -36,6 +36,14 @@ abstract class Vehicle {
     NumberOfDoors: number;
     Horsepower: number;
 
+    // Must be implemented by derived class
+    public abstract MakeNoise(): void;
+
+    // Virtual method can be overriden in derived classes
+    public SoundHorn(): void {
+        console.log("Honk")
+    }
+
     constructor(vehicleIdentificationNumber: string, numberOfWheels: number, fuelType: FuelType, numberOfDoors: number, horsepower: number) {
         this.VehicleIdenfiticationNumber = vehicleIdentificationNumber;
         this.NumberOfWheels = numberOfWheels;
@@ -49,6 +57,16 @@ export class Car extends Vehicle {
 
     // add property to derived class
     Manufacturer: string
+
+    // override abstract method
+    public override MakeNoise(): void {
+        console.log("Brum");
+    }
+
+    // override virtual method
+    public override SoundHorn(): void {
+        console.log("Beep");
+    }
 
     // 
     constructor(
