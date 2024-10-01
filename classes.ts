@@ -41,7 +41,7 @@ abstract class Vehicle {
 
     // Virtual method can be overriden in derived classes
     public SoundHorn(): void {
-        console.log("Honk")
+        console.log("Honk");
     }
 
     constructor(vehicleIdentificationNumber: string, numberOfWheels: number, fuelType: FuelType, numberOfDoors: number, horsepower: number) {
@@ -56,7 +56,7 @@ abstract class Vehicle {
 export class Car extends Vehicle {
 
     // add property to derived class
-    Manufacturer: string
+    Manufacturer: string;
 
     // override abstract method
     public override MakeNoise(): void {
