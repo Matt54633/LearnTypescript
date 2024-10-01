@@ -1,3 +1,4 @@
+import { FuelType } from "./enums";
 
 export class Person {
     Id: number;
@@ -31,11 +32,11 @@ export class Employee extends Person {
 abstract class Vehicle {
     VehicleIdenfiticationNumber: string;
     NumberOfWheels: number;
-    FuelType: string;
+    FuelType: FuelType;
     NumberOfDoors: number;
     Horsepower: number;
 
-    constructor(vehicleIdentificationNumber: string, numberOfWheels: number, fuelType: string, numberOfDoors: number, horsepower: number) {
+    constructor(vehicleIdentificationNumber: string, numberOfWheels: number, fuelType: FuelType, numberOfDoors: number, horsepower: number) {
         this.VehicleIdenfiticationNumber = vehicleIdentificationNumber;
         this.NumberOfWheels = numberOfWheels;
         this.FuelType = fuelType;
@@ -53,7 +54,7 @@ export class Car extends Vehicle {
     constructor(
         vehicleIdentificationNumber: string,
         numberOfWheels: number,
-        fuelType: string,
+        fuelType: FuelType,
         numberOfDoors: number,
         horsepower: number,
         manufacturer: string

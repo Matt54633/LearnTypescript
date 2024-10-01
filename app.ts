@@ -1,6 +1,7 @@
 // Variable Declarations
 
 import { Employee } from "./classes";
+import { DaysOfWeek } from "./enums";
 import { capitalise, lowercase } from "./functions";
 
 let x: number = 0;
@@ -33,3 +34,4 @@ console.log(Matt);
 console.log(Matt.YearsOfService);
 console.log(capitalise(forename));
 console.log(lowercase(surname));
+console.log(DaysOfWeek.Monday);
