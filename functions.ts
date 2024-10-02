@@ -11,3 +11,8 @@ export const lowercase = (input: string): string => {
 export function log(message: string): void {
     console.log(message);
 }
+
+// No return type
+export function warning(message: string) {
+    console.warn(message);
+}
