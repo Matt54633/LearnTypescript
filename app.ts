@@ -1,8 +1,8 @@
 // Variable Declarations
 
-import { Employee } from "./classes";
-import { DaysOfWeek } from "./enums";
-import { capitalise, lowercase } from "./functions";
+import { Employee } from "./Ts-Files/classes";
+import { DaysOfWeek } from "./Ts-Files/enums";
+import { capitalise, lowercase } from "./Ts-Files/functions";
 
 let x: number = 0;
 let forename: string = "matt";
