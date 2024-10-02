@@ -1,17 +1,8 @@
-const ages: number[] = [1, 2, 3, 4, 5];
+// Arrays
 
-// Looping Constructs
-for (let i: number = 0; i < 10; i++) {
-    console.log(i);
-}
+const numbers: number[] = [1, 2, 3, 4, 5];
 
-let i: number = 0;
+const names: string[] = [];
+names.push('Matt');
 
-do {
-    console.log(i);
-    i++;
-} while (i < 10);
-
-ages.forEach(age => {
-    console.log(age);
-});
+const surnames: readonly string[] = ['Matt', 'Adam'];
