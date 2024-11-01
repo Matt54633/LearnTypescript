@@ -31,7 +31,7 @@ export class Employee extends Person {
 }
 
 abstract class Vehicle {
-    VehicleIdenfiticationNumber: string;
+    VehicleIdentificationNumber: string;
     NumberOfWheels: number;
     FuelType: FuelType;
     NumberOfDoors: number;
@@ -46,7 +46,7 @@ abstract class Vehicle {
     }
 
     constructor(vehicleIdentificationNumber: string, numberOfWheels: number, fuelType: FuelType, numberOfDoors: number, horsepower: number) {
-        this.VehicleIdenfiticationNumber = vehicleIdentificationNumber;
+        this.VehicleIdentificationNumber = vehicleIdentificationNumber;
         this.NumberOfWheels = numberOfWheels;
         this.FuelType = fuelType;
         this.NumberOfDoors = numberOfDoors;
